@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coders</title>
+
+    <!-- link bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Juan Dev</h1>
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <img src="/assets/firma_juan.jpg" alt="logo">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">Principal</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/inicio.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/sobre-mi.html">Sobre mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/proyectos.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <h2>Desarrollador web</h2>
+        <section>
+            <article>
+                <p>Quieres crear tu propia pagina web y no sabes como? Cuenta conmigo para realizar tu trabajo.</p>
+            </article>
+        </section>
+
+        <section class="biografia">
+            <h2>Sobre mi:</h2>
+            <article>
+                <p>Soy Juan Rodríguez, estudiante avanzado de Ingeniería Informática y desarrollador web con más de tres años de experiencia en la creación de sitios web modernos, funcionales y responsivos.</p>
+            </article>
+                <figure>
+                    <img src="/assets/juan_rodriguez.avif" alt="Foto de perfil de Juan Rodriguez.">
+                </figure>
+
+        </section>
+
+        <section class="container">
+            <div class="row">
+                <article class="col-md-6">
+                    <h3>Algunos servicios que puedo ofrecer</h3>
+                    <ul>
+                        <li>Pagina personal</li>
+                        <li>E-commerce</li>
+                        <li>Blog estático</li>
+                        <li>Dashboard de estadisticas</li>
+                    </ul>
+                </article>
+
+                <article class="col-md-6">
+                    <h3>Habilidades tecnicas</h3>
+                    <ul>
+                        <li>HTML55</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Todos los derechos reservados.</p>
+        <img src="/assets/firma_juan.jpg" alt="logo">
+
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target=".modal">Barra de Navegacion</button>
+
+        <div class="modal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Barra de Navegacion</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>¿Quieres ir de nuevo a la barra de navegacion?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                        <button type="button" class="btn btn-primary">Si</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+     <!-- link bootstrap CDN  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
