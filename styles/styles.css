@@ -11,16 +11,16 @@
 /* Estilos generales */
 body {
     font-family: "Roboto", sans-serif;
-    color: #47301F;
-    background: #F1DABF;
+    color: #23C9DB;
+    background: #0B345A;
 }
 
 /* Header */
 header {
-    background: #F1DABF;
-    color: #362417;
+    background: #0B345A;
+    color: #23C9DB;
     padding: 30px 20px;
-    border-bottom: 2px solid #362417;
+    border-bottom: 2px solid #23C9DB;
 }
 
 section {
@@ -30,7 +30,7 @@ section {
 }
 
 footer{
-    border-top: 2px solid #362417;
+    border-top: 2px solid #23C9DB;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,20 +38,25 @@ footer{
 }
 
 .biografia {
-    background: #362417;
-    color: #F1DABF;
+    background: #23C9DB;
+    color: #0B345A;
+}
+
+.preguntas {
+    background: #0B345A;
+    color: #23C9DB
+
 }
 
 /* estilos Navbar */
-
-.navbar {
-    text-decoration: none;
-    color: #362417;
-    background-color: #F1DABF;
+.nav-link:hover {
+    color: #23C9DB;
 }
 
-.nav-link:hover {
-    color: #362417;
+/* redes */
+.redes {
+    color: #23C9DB;
+    text-decoration: none;
 }
 
 /* Imagenes */
@@ -79,11 +84,22 @@ footer {
     padding: 1rem;
 }
 
+/* carousel */
+.carousel {
+    padding: 16px;
+}
+
+/* accordion */
+.accordion-collapse {
+    color: #0B345A;
+    background-color: #23C9DB;
+}
+
 /* Grid */
 @media (min-width: 768px){
     .biografia {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        display: flex;
+        flex-direction: column;
     }
     nav {
         padding: 24px;
@@ -96,7 +112,8 @@ footer {
 @media (min-width: 1024px){
     .biografia {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
     }
     footer {
         flex-direction: row;
