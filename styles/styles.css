@@ -63,7 +63,6 @@ footer{
 
 figure img {
     width: 100%;
-    height: auto;
 }
 
 /* Tipografía */
@@ -87,6 +86,7 @@ footer {
 /* carousel */
 .carousel {
     padding: 16px;
+    height: auto;
 }
 
 /* accordion */
@@ -106,7 +106,11 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-}
+    }
+    .proyectos-posibles{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (min-width: 1024px){
@@ -125,6 +129,10 @@ footer {
         grid-template-areas: 
             "que-hago trabaja-conmigo"
             "imagen-web imagen-web";
+    }
+    .proyectos-posibles{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
