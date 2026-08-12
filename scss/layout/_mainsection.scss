@@ -1,0 +1,88 @@
+@use '../utilities/mixins';
+@use '../utilities/variables';
+
+body {
+  font-family: "Roboto", sans-serif;
+  @include mixins.color-y-fondo(variables.$primary-color, variables.$secondary-color);
+  h1 {
+    @include mixins.padding(30px, 20px);
+  }
+
+  /* .biografia */
+  .biografia {
+    @include mixins.color-y-fondo(variables.$secondary-color, variables.$primary-color);
+    margin-bottom: 20px; 
+  }
+
+  .accordion {
+    @include mixins.padding(30px, 20px);
+  }
+
+  /* redes */
+  .redes {
+    color: variables.$primary-color;
+    text-decoration: none;
+  }
+
+    /* carousel */
+  .carousel {
+    @include mixins.padding(30px, 20px);
+    height: auto;
+  }
+
+  /* accordion */
+  .accordion-collapse {
+    @include mixins.color-y-fondo(variables.$secondary-color, variables.$primary-color);
+  }
+}
+
+section {
+  @include mixins.padding(30px, 20px);
+}
+
+/* Imagenes */
+figure img {
+  @include mixins.padding(30px, 20px);
+  height: auto;
+}
+
+
+/* media queries */
+@media (min-width: 768px) {
+  .biografia {
+    display: flex;
+    flex-direction: column;
+  }
+  .proyectos-posibles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .biografia {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+  }
+  .inicio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "que-hago trabaja-conmigo" "imagen-web imagen-web";
+  }
+  .proyectos-posibles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.que-hago {
+  grid-area: que-hago;
+}
+
+.trabaja-conmigo {
+  grid-area: trabaja-conmigo;
+}
+
+.imagen-web {
+  grid-area: imagen-web;
+}

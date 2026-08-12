@@ -1,0 +1,10 @@
+@use '../utilities/mixins';
+@use '../utilities/variables';
+
+@media (min-width: 768px) {
+  nav {
+    @include mixins.padding(24px, 24px);
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -1,147 +1,158 @@
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-/*font-family: "Roboto", sans-serif*/
-
-/* Variables */
-
+@charset "UTF-8";
 * {
-    margin: 0;
-    padding: 0;
-}
-
-/* Estilos generales */
-body {
-    font-family: "Roboto", sans-serif;
-    color: #23C9DB;
-    background: #0B345A;
-}
-
-/* Header */
-header {
-    background: #0B345A;
-    color: #23C9DB;
-    padding: 30px 20px;
-    border-bottom: 2px solid #23C9DB;
-}
-
-section {
-    margin-bottom: 20px;
-    padding: 20px;
-    gap: 16px;
-}
-
-footer{
-    border-top: 2px solid #23C9DB;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-}
-
-.biografia {
-    background: #23C9DB;
-    color: #0B345A;
-}
-
-.preguntas {
-    background: #0B345A;
-    color: #23C9DB
-
-}
-
-/* estilos Navbar */
-.nav-link:hover {
-    color: #23C9DB;
-}
-
-/* redes */
-.redes {
-    color: #23C9DB;
-    text-decoration: none;
-}
-
-/* Imagenes */
-
-figure img {
-    width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 /* Tipografía */
-h1 {
-    font-size: 3rem;
-    font-weight: 700;
+.h1 {
+  font-size: 3rem;
+  font-weight: 700;
 }
 
-p {
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.55;
-
+.p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.55;
 }
 
+.footer {
+  font-size: 0.5rem;
+}
+
+header {
+  color: #23C9DB;
+  background-color: #0B345A;
+  border-bottom: 2px solid #23C9DB;
+}
+
+@media (min-width: 768px) {
+  nav {
+    padding: 24px 24px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
 footer {
-    font-size: 0.5rem;
-    padding: 1rem;
+  border-top: 2px solid #23C9DB;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
 }
 
-/* carousel */
-.carousel {
-    padding: 16px;
-    height: auto;
+@media (min-width: 1024px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: #23C9DB;
+  background-color: #0B345A;
+}
+body h1 {
+  padding: 30px 20px;
+}
+body {
+  /* .biografia */
+}
+body .biografia {
+  color: #0B345A;
+  background-color: #23C9DB;
+  margin-bottom: 20px;
+}
+body .accordion {
+  padding: 30px 20px;
+}
+body {
+  /* redes */
+}
+body .redes {
+  color: #23C9DB;
+  text-decoration: none;
+}
+body {
+  /* carousel */
+}
+body .carousel {
+  padding: 30px 20px;
+  height: auto;
+}
+body {
+  /* accordion */
+}
+body .accordion-collapse {
+  color: #0B345A;
+  background-color: #23C9DB;
 }
 
-/* accordion */
-.accordion-collapse {
-    color: #0B345A;
-    background-color: #23C9DB;
+section {
+  padding: 30px 20px;
 }
 
-/* Grid */
-@media (min-width: 768px){
-    .biografia {
-        display: flex;
-        flex-direction: column;
-    }
-    nav {
-        padding: 24px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .proyectos-posibles{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
+/* Imagenes */
+figure img {
+  padding: 30px 20px;
+  height: auto;
 }
 
-@media (min-width: 1024px){
-    .biografia {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        align-items: center;
-    }
-    footer {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .inicio-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-            "que-hago trabaja-conmigo"
-            "imagen-web imagen-web";
-    }
-    .proyectos-posibles{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
+/* media queries */
+@media (min-width: 768px) {
+  .biografia {
+    display: flex;
+    flex-direction: column;
+  }
+  .proyectos-posibles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .biografia {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+  }
+  .inicio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "que-hago trabaja-conmigo" "imagen-web imagen-web";
+  }
+  .proyectos-posibles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.que-hago {
+  grid-area: que-hago;
 }
 
-.que-hago{
-    grid-area: que-hago;
+.trabaja-conmigo {
+  grid-area: trabaja-conmigo;
 }
-.trabaja-conmigo{
-    grid-area: trabaja-conmigo;
+
+.imagen-web {
+  grid-area: imagen-web;
 }
-.imagen-web{
-    grid-area: imagen-web;
+
+/* preguntas */
+.preguntas {
+  color: #23C9DB;
+  background-color: #0B345A;
 }
+.preguntas:hover {
+  color: #ffffff;
+}
+.preguntas:active {
+  color: #0B345A;
+  background-color: #23C9DB;
+}
+
+/* navbar */
+.nav-link:hover {
+  color: #23C9DB;
+}
+
+/*# sourceMappingURL=styles.css.map */

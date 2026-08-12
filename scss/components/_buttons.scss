@@ -1,0 +1,20 @@
+@use '../utilities/mixins';
+@use '../utilities/variables';
+
+/* preguntas */
+.preguntas {
+    @include mixins.color-y-fondo(variables.$primary-color, variables.$secondary-color);
+    &:hover {
+        color: variables.$tertiary-color;
+    }
+    &:active{
+        @include mixins.color-y-fondo(variables.$secondary-color, variables.$primary-color);
+    }
+}
+
+/* navbar */
+.nav-link{
+    &:hover {
+    color: variables.$primary-color;
+    }
+}

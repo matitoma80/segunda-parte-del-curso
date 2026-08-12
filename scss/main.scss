@@ -1,0 +1,13 @@
+@use 'utilities/mixins';
+@use 'utilities/variables';
+
+@use 'base/reset';
+@use 'base/tipografia.scss';
+
+@use 'layout/header';
+@use 'layout/nav';
+@use 'layout/footer';
+@use 'layout/mainsection';
+
+@use 'components/buttons';
+@use 'components/cards';
