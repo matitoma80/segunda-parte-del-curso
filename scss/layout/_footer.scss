@@ -7,6 +7,14 @@ footer {
   flex-direction: column;
   align-items: center;
   @include mixins.padding(10px, 20px);
+  .instagram a{
+    color: variables.$primary-color;
+    text-decoration: none;
+    &:hover{
+      color: variables.$tertiary-color;
+    }
+  }
+  
 }
 
 @media (min-width: 1024px) {

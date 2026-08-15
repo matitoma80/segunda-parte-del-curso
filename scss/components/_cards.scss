@@ -1,0 +1,15 @@
+@use '../utilities/mixins';
+@use '../utilities/variables';
+
+.card {
+    width: 18rem;
+    margin: 60px 0px;
+    background-color: variables.$primary-color;
+    color: variables.$secondary-color;
+    &:hover{
+        transform: scale(1.5,1.5);
+    }
+    img{
+        padding: 5px;
+    }
+}

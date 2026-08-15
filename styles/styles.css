@@ -25,6 +25,9 @@ header {
   background-color: #0B345A;
   border-bottom: 2px solid #23C9DB;
 }
+header .logo:hover {
+  transform: scale(1.05, 1.05);
+}
 
 @media (min-width: 768px) {
   nav {
@@ -39,6 +42,13 @@ footer {
   flex-direction: column;
   align-items: center;
   padding: 10px 20px;
+}
+footer .instagram a {
+  color: #23C9DB;
+  text-decoration: none;
+}
+footer .instagram a:hover {
+  color: #ffffff;
 }
 
 @media (min-width: 1024px) {
@@ -65,20 +75,21 @@ body .biografia {
 }
 body .accordion {
   padding: 30px 20px;
+  text-decoration: none;
 }
 body {
   /* redes */
 }
-body .redes {
-  color: #23C9DB;
+body .redes .nav-li {
+  list-style: none;
+  padding: 10px;
+}
+body .redes .nav-li a {
   text-decoration: none;
+  color: #23C9DB;
 }
-body {
-  /* carousel */
-}
-body .carousel {
-  padding: 30px 20px;
-  height: auto;
+body .redes .nav-li a:hover {
+  color: #ffffff;
 }
 body {
   /* accordion */
@@ -108,6 +119,10 @@ figure img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  .proyectos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (min-width: 1024px) {
   .biografia {
@@ -123,6 +138,11 @@ figure img {
   .proyectos-posibles {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+  .proyectos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
   }
 }
 .que-hago {
@@ -153,6 +173,19 @@ figure img {
 /* navbar */
 .nav-link:hover {
   color: #23C9DB;
+}
+
+.card {
+  width: 18rem;
+  margin: 60px 0px;
+  background-color: #23C9DB;
+  color: #0B345A;
+}
+.card:hover {
+  transform: scale(1.5, 1.5);
+}
+.card img {
+  padding: 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */

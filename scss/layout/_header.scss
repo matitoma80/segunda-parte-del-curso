@@ -4,4 +4,7 @@
 header {
     @include mixins.color-y-fondo(variables.$primary-color, variables.$secondary-color);
     border-bottom: 2px solid variables.$primary-color;
+    .logo:hover{
+        transform: scale(1.05,1.05);
+    }
 }
