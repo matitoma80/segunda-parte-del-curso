@@ -15,6 +15,12 @@
 /* navbar */
 .nav-link{
     &:hover {
-    color: variables.$primary-color;
+        color: variables.$primary-color;
     }
+}
+
+.enviar{
+    @include mixins.color-y-fondo(variables.$secondary-color, variables.$primary-color);
+    @include mixins.padding(10px, 10px);
+    border-radius: 20%;
 }

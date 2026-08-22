@@ -1,5 +1,6 @@
 @use '../utilities/mixins';
 @use '../utilities/variables';
+@use '../utilities/extend';
 
 body {
   font-family: "Roboto", sans-serif;
@@ -27,12 +28,12 @@ body {
     .nav-li{
       list-style: none;
       padding: 10px;
-    }
-    .nav-li a{
-      text-decoration: none;
-      color: variables.$primary-color;
-      &:hover{
-        color: variables.$tertiary-color;
+      a{
+        text-decoration: none;
+        color: variables.$primary-color;
+        &:hover{
+          color: variables.$tertiary-color;
+        }
       }
     }
   }
@@ -41,6 +42,11 @@ body {
   .accordion-collapse {
     @include mixins.color-y-fondo(variables.$secondary-color, variables.$primary-color);
   }
+
+  .proyectos{
+      display: grid;
+      place-items: center;
+    }
 }
 
 section {

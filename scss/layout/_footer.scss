@@ -1,11 +1,10 @@
 @use '../utilities/mixins';
 @use '../utilities/variables';
+@use '../utilities/extend';
 
 footer {
   border-top: 2px solid variables.$primary-color;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @extend %flex-center-column;
   @include mixins.padding(10px, 20px);
   .instagram a{
     color: variables.$primary-color;
