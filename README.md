@@ -11,3 +11,7 @@ Portfolio personal desarrollado para presentar mi perfil como desarrollador web,
 - SCSS
 - Bootstrap
 - Git
+
+## Vercel
+
+[text](https://segunda-parte-del-curso.vercel.app/)
