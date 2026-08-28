@@ -14,4 +14,4 @@ Portfolio personal desarrollado para presentar mi perfil como desarrollador web,
 
 ## Vercel
 
-[text](https://segunda-parte-del-curso.vercel.app/)
+[JuanDev](https://segunda-parte-del-curso.vercel.app/)
