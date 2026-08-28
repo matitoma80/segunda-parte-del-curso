@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JuanDev | Redes sociales para contactar a Juan Rodriguez</title>
-    <meta name="description" content="Contactos de JuanDev. Enlaces a todas las redes sociales.">
+    <meta name="description" content="Contactá con JuanDev a través de Instagram, Facebook, WhatsApp o correo electrónico y consultá sobre nuestros servicios de desarrollo web.">
+    <meta name="keywords" content="contactos, instagram, facebook, whatsapp, correo electronico">
 
      <!-- link bootstrap CDN  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -57,23 +58,23 @@
             <nav class="redes" aria-label="redes">
                 <ul>
                     <li class="nav-li">
-                        <a href="https://instagram.com" target="_blank">Perfil de Instagram</a>
+                        <img src="../assets/instagram_logo.svg" class="col-2 logo-redes" alt="logo instagram"> <a href="https://instagram.com" target="_blank">Perfil de Instagram</a>
                     </li>
                     <li class="nav-li">
-                        <a href="https://facebook.com" target="_blank">Perfil de Facebook</a>
+                        <img src="../assets/facebook_logo.webp" class="col-2 logo-redes" alt="logo facebook"> <a href="https://facebook.com" target="_blank">Perfil de Facebook</a>
                     </li>
                     <li class="nav-li">
-                        <a href="https://whatsapp.com" target="_blank">Contacto de Whatsapp</a>
+                        <img src="../assets/WhatsApp_logo.svg.webp" class="col-2 logo-redes" alt="logo whatsapp"> <a href="https://whatsapp.com" target="_blank">Contacto de Whatsapp</a>
                     </li>
                     <li class="nav-li">
-                        <a href="https://gmail.com" target="_blank">Correo electronico</a>
+                        <img src="../assets/Gmail_logo.svg.webp" class="col-2 logo-redes" alt="logo gmail"> <a href="https://gmail.com" target="_blank">Correo electronico</a>
                     </li>
                 </ul>
             </nav>
 
             <article>
                 <figure>
-                    <img src="../assets/redes_sociales.webp" class="col-12" alt="Imagen de redes sociales.">
+                    <img src="../assets/redes_sociales.webp" class="col-12 imagen-contactos" alt="Imagen de redes sociales.">
                 </figure>
             </article>
         </section>
@@ -81,12 +82,20 @@
         <section>
             <h2>Enviame un mail</h2>
             <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <label for="exampleFormControlInput1" class="form-label">Email</label>
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="juanDev@gmail.com">
             </div>
             <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Email de contacto</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Asunto</label>
+                <textarea class="form-control" id="exampleFormControlTextarea2" rows="1"></textarea>
+            </div>
+            <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Texto</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea3" rows="3"></textarea>
             </div>
             <button type="button" class="enviar">Enviar</button>
         </section>

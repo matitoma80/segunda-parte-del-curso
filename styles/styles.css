@@ -114,6 +114,11 @@ figure img {
   height: auto;
 }
 
+.logo-redes {
+  weight: 40px;
+  height: 40px;
+}
+
 /* media queries */
 @media (min-width: 768px) {
   .biografia {
@@ -148,6 +153,10 @@ figure img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
+  }
+  .imagen-contactos {
+    padding: 30px 20px;
+    height: 800px;
   }
 }
 .que-hago {
